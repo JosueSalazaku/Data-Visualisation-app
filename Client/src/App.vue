@@ -1,6 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
 import HelloWorld from './components/HelloWorld.vue'
+import NavbarItems from './components/NavbarItems.vue';
 </script>
 
 <template>
@@ -8,18 +9,12 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <NavbarItems/>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/login">login</RouterLink>
-        <RouterLink to="/signup">login</RouterLink>
-        <h1 class="text-orange-500">Hello</h1>
-      </nav>
     </div>
   </header>
 
-  <RouterView />
+
 </template>
 
 <style scoped>
