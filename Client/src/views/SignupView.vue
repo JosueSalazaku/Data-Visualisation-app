@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    <h1>Hello Welcome to the login View</h1>
+    <h1>Hello Welcome to the Sign Up View</h1>
   </main>
 </template>
