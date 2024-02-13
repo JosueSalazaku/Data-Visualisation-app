@@ -1,23 +1,22 @@
 <script setup>
-import { reactive } from 'vue';
-import NavbarItems from './components/NavbarItems.vue';
-import HomeView from './views/HomeView.vue';
+import { reactive } from 'vue'
+import NavbarItems from './components/NavbarItems.vue'
+
 
 const data = reactive({
-  isDarkMode: false,
-});
+  isDarkMode: false
+})
 
 const toggleDarkMode = () => {
-  data.isDarkMode = !data.isDarkMode;
-};
+  data.isDarkMode = !data.isDarkMode
+}
 </script>
 
 <template>
-  <div :class="{ 'dark': data.isDarkMode, 'light': !data.isDarkMode }">
+  <div :class="{ dark: data.isDarkMode, light: !data.isDarkMode }">
     <header>
       <NavbarItems :darkMode="data.isDarkMode" @toggleDarkMode="toggleDarkMode" />
     </header>
-    <HomeView />
   </div>
 </template>
 

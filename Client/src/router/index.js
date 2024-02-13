@@ -6,7 +6,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: HomeView
     },
@@ -20,13 +20,18 @@ const router = createRouter({
     },
     {
       path: '/login',
-      name: 'login',
+      name: 'LoginView',
       component: () => import('/Users/josuesalazaku/Developer/Projects/Data-Visualisation-app/Client/src/views/LoginView.vue')
     },
     {
       path: '/signup',
-      name: 'signup',
+      name: 'SignupView',
       component: () => import('/Users/josuesalazaku/Developer/Projects/Data-Visualisation-app/Client/src/views/SignupView.vue')
+    },
+    {
+      path: '/data',
+      name: 'DataView',
+      component: () => import('/Users/josuesalazaku/Developer/Projects/Data-Visualisation-app/Client/src/views/DataView.vue')
     }
   ]
 })
